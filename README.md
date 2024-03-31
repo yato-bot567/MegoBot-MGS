@@ -27,7 +27,7 @@
 
 > [ 📌 ] لا يُسمح بالبوتات الاخري في مجموعات الدعم.
 
- ### `▢ المطور الرسمي (نشط)`
+ ### `▢رقم المطور الرسمي (نشط)`
 
 
 <a href="https://api.whatsapp.com/send/?phone=201012531172&text=/estado&type=phone_number&app_absent=0" target="blank"><img src="https://img.shields.io/badge/BOT_OFICIAL_1_(نشط)-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
