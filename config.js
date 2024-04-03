@@ -7,17 +7,17 @@ import fetch from 'node-fetch';
 import axios from 'axios';
 import moment from 'moment-timezone';
 
-global.botnumber = "*اسم البوت بتاعك*"
+global.botnumber = "*『🔥┇𝙼𝙴𝙶𝙾-𝙱𝙾𝚃』*"
 global.confirmCode = ""
 
-global.owner = [['رقمك هنا', 'اسمك', true],
+global.owner = [['201012531172', '𝙢,𝙚,𝙜,𝙤, ❦︎', true],
 ];
 
-global.suittag = ['رقمم'];
-global.prems = ['رقمك'];
+global.suittag = ['201025663589'];
+global.prems = ['201025663589'];
 
-global.packname = '☾︎ حزمه الاستيكر اسمك ☽︎';
-global.author = '✩برضو اسمك☆';
+global.packname = '☾︎ 𝙈𝙀𝙂𝙊𝘽𝙊𝙏-𝙈𝘿 ☽︎';
+global.author = '✩𝙼𝙴𝙶𝙾-𝙱𝙾𝚃☆';
 global.wm = '✯𝐌𝐄𝐆𝐎𝐁𝐎𝐓-𝐌𝐃✯';
 global.titulowm = '☾︎ 𝙈𝙀𝙂𝙊𝘽𝙊𝙏-𝙈𝘿 ☽︎';
 global.titulowm2 = `☾︎ 𝙈𝙀𝙂𝙊𝘽𝙊𝙏-𝙈𝘿 ☽︎`
