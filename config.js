@@ -10,7 +10,7 @@ import moment from 'moment-timezone';
 global.botnumber = "*『🔥┇kana-𝙱𝙾𝚃』*"
 global.confirmCode = ""
 
-global.owner = [['201003691617', 'k,a,n,a, ❦︎', true],
+global.owner = [['201003691617', 'ابو عبدالله ❦︎', true],
 ];
 
 global.suittag = ['201003691617'];
