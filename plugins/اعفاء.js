@@ -26,7 +26,7 @@ m.reply(`*تـــم الــأعــفـاء ! قلولي شطوره انا ق�
 }
 handler.help = ['demote (@tag)']
 handler.tags = ['group']
-handler.command = ['demote', 'اعفاء'] 
+handler.command = ['demote', 'تخفيض'] 
 handler.group = true
 handler.admin = true
 handler.botAdmin = true
