@@ -20,11 +20,11 @@
             "texto1": "_*< ANTI-PRIVADO />*_\n\n*[ ℹ️ ] A função antiprivada está habilitada, portanto você será bloqueado.*"
         },
         "_antitoxic": {
-            "texto1": "_*< ANTI-TOXIC />*_\n\n*[ ℹ️ ] ",
+            "texto1": "_*< مضاد-الشتائم />*_\n\n*[ ℹ️ ] ",
             "texto1_1": " envie a palavra ",
-            "texto1_2": " é proibido neste grupo.\n\n▢ *Aviso:* ",
+            "texto1_2": " يسود عيب تقول كذا.\n\n▢ *Aviso:* ",
             "texto2": "_*< ANTI-TOXIC />*_\n\n*[ ℹ️ ] O participante ",
-            "texto2_1": " ultrapassou 5 advertências, então você será expulso do grupo.* "
+            "texto2_1": " يتم كرشك من الجروب لانك عبد فاسق سبيت فوق ال 5 مرات.* "
         },
         "_antitrabas": {
             "texto1": "< ANTI-TRABAS />_\n\n*[ ℹ️ ] O administrador ",
@@ -186,10 +186,10 @@
         "buscador_lyrics": {
             "texto1": "[❗𝐈𝐍𝐅𝐎❗] EXEMPLO DO USO CORRETO DO COMANDO",
             "texto2": [
-                "🎤 TÍTULO:",
-                "👤 ARTISTA:",
-                "📃🎵 LETRA:",
-                "[❗𝐈𝐍𝐅𝐎❗] ERRO, POR FAVOR TENTE NOVAMENTE"
+                "🎤 الاسم:",
+                "👤 المغني:",
+                "📃🎵 الكلمات:",
+                "[❗𝐈𝐍𝐅𝐎❗] حدث خطأ غير متوقع"
             ]
         },
         "buscador_peliculas": {
@@ -207,11 +207,11 @@
             "texto1": "[❗] INSIRA O NOME DA APLICATIVO QUE DESEJA BUSCAR",
             "texto2": "[❗] INSIRA O NOME DA APP QUE QUEIRA BUSCAR",
             "texto3": [
-                "*🔍 Resultado:*",
-                "*✍️ Desenvolvedor:*",
-                "*💸 Preço:*",
-                "*📈 Classificação:*",
-                "*⛓️ Link:*"
+                "*🔍 نتيجه البحث:*",
+                "*✍️ مطور البرنامج:*",
+                "*💸 السعر:*",
+                "*📈 التصنيف:*",
+                "*⛓️ الرابط:*"
             ]
         },
         "buscador_stickersearch": {
@@ -667,17 +667,17 @@
         "downloader_modapk": {
             "texto1": "*[❗️] Insira o nome do APK que deseja buscar.*",
             "texto2": [
-                "📲 *Baixador do Aptoide* 📲\n\n📌 *Nome:*",
-                "📦 *Pacote:*",
-                "🕒 *Última atualização:*",
-                "📥 *Tamanho:*"
+                "📲 *تحميل ابتويد* 📲\n\n📌 *Nome:*",
+                "📦 *الطرد:*",
+                "🕒 *اخر تحديث:*",
+                "📥 *المساحة:*"
             ],
-            "texto3": "*[⛔️] O arquivo é muito pesado e não será enviado.*",
-            "texto4": "*[❗️] Erro, nenhum resultado encontrado para sua pesquisa.*"
+            "texto3": "*[⛔️] الملف مساحته كبيره جدا لا يمكنني ارساله لاني دلوعه*",
+            "texto4": "*[❗️] لا يجود نسخه مهكره من هذا التطبيق*"
         },
         "downloader_pinterest": {
-            "texto1": "*[❗️] Informe o URL do conteúdo que deseja baixar.*",
-            "texto2": "*Resultados da Busca*"
+            "texto1": "*[❗️] مفيش حاجه كده يسطا فبنترست*",
+            "texto2": "*نتيجة البحث*"
         },
         "downloader_playdoc": {
             "texto1": "*[❗️] Informe o nome ou a URL do documento do Google Drive, Por favor, insira um link válido ou o ID de uma pasta/arquivo.*\n\n*—◉ Exemplo:*",
@@ -2828,14 +2828,15 @@
             "texto2": "*[❗️] ERRO, NÃO FOI POSSÍVEL DARLE DIREITOS DE ADMINISTRADOR*"
         },
         "owner_banchat": {
-            "texto1": "*[❗️] ESTE CHAT FOI BLOQUEADO COM EXITO*\n\n*—◉ O BOT NÃO RECEBERÁ NENHUM COMANDO HASTA QUE SEJA DESBLOQUEADO ESTE CHAT*"
+            "texto1": "*[❗️] تم التبنيد يكبير 👍🏿*\n\n*—◉ الجروب ده مش هيعرف يستخدم البوت تاني☝🏿*"
         },
         "owner_banlist": {
             "texto1": "〔 𝙾𝚄𝚂𝚄𝙰𝚁𝙸𝙾𝚂 𝙱𝙰𝙽𝙸𝙳𝙾𝚂 〕",
             "texto2": "〔 𝙲𝙷𝙰𝚃𝚂 𝙱𝙰𝙽𝙸𝙳𝙾𝚂 〕"
         },
         "owner_banuser": {
-            "texto1": "[❗] Solicitação a uma pessoa banida com sucesso.\n\n*—◉ Exemplo:*",
+            "texto1": "[❗] تم 
+                 \n\n*—◉ Exemplo:*",
             "texto2": "*[❗INFORMAÇÃO❗] O USUÁRIO BANIDO CON EXITO, MAS NÃO ESTÁ CONECTADO*.\n*—◉ O USUÁRIO NÃO PODERÁ USAR O BOT HASTA QUE SEJA DESBLOQUEADO*"
         },
         "owner_bcgc": {
@@ -2971,11 +2972,11 @@
             "texto3": "Lista de grupos do Bot 🤖\n\n—◉ Total de grupos:"
         },
         "owner_join": {
-            "texto1": "[❗] Link errado ou ausente, por favor insira o link de um grupo do WhatsApp.\n\n*—◉ Exemplo:\n◉ #join https://chat.whatsapp.com/FwEUGxkvZD85fIIp0gKyFC*",
-            "texto2": "[ ✔️ ] O Bot entrou com sucesso no grupo.",
-            "texto3": "[❗] O link do seu grupo foi enviado ao meu proprietário/a.\n\n*—◉ Seu grupo estará em avaliação e o proprietário/a do Bot decidirá se adiciona ou não o Bot.\n\n—◉ Algumas razões pelas quais sua solicitação pode ser recusada são:\n1.- O Bot está saturado.\n2.- O Bot foi recentemente removido do grupo.\n3.- O link do grupo foi redefinido.\n4.- O Bot não é adicionado a grupos por decisão do proprietário/a.\n\n—◉ O processo de avaliação pode levar algum tempo, até mesmo dias, por favor, tenha paciência.",
-            "texto4": "[❗] NOVA SOLICITAÇÃO DE UM BOT PARA UM GRUPO [❗]\n\n—◉ Solicitante:",
-            "texto5": "[❗] Desculpe, algo deu errado. Por favor, relate ou tente novamente.*"
+            "texto1": "[❗] فين لينك الجروب يسطا انت بتضحك عليا روح يعم شوف لينك\n\n*—◉ مثال:\n◉ #.ادخل https://chat.whatsapp.com/FwEUGxkvZD85fIIp0gKyFC*",
+            "texto2": "[ ✔️ ] سمعا وطاعه تم دخول الجروب يكبير",
+            "texto3": "[❗]  تم ارسال طلب دخول الجروب للكينج الي طورني/a.\n\n*—◉ Your group will be under evaluation and the owner/سيقرر المطور إذا كان سيدخلني الجروب ام لا\n\n—◉ في حبة حاجات ممكن تخليه يرفض وممكن لا هو ومزاجه وهي:\n1.- البوت ف جروبات كتير1 \n2.- البوت كان جوا وحد طرده2\n3.- اما رقم تلاته انه الجروب مختلط."
+            "texto4": "[❗] طلب جديد لدخول البوت جروب[❗]\n\n—◉ الي طلب:",
+            "texto5": "[❗] حدث خطأ.*"
         },
         "owner_leavegc": {
             "texto1": "Adeus a todos, o Bot se despede! (≧ω≦)ゞ"
