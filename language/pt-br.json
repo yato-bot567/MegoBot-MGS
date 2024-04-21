@@ -184,12 +184,12 @@
             "texto2": "RESULTADOS DE :"
         },
         "buscador_lyrics": {
-            "texto1": "[❗𝐈𝐍𝐅𝐎❗] EXEMPLO DO USO CORRETO DO COMANDO",
+            "texto1": "[❗𝐈𝐍𝐅𝐎❗] خطأ هذا مثال على استخدام الامر:",
             "texto2": [
                 "🎤 الاسم:",
                 "👤 المغني:",
                 "📃🎵 الكلمات:",
-                "[❗𝐈𝐍𝐅𝐎❗] حدث خطأ غير متوقع"
+                "[❗𝐈𝐍𝐅𝐎❗] خطأ, أعد المحاوله مرا اخرى"
             ]
         },
         "buscador_peliculas": {
@@ -448,9 +448,9 @@
             "texto1": "[❗𝐈𝐍𝐅𝐎❗] RESPONDA À FIGURA QUE DESEJA CONVERTER EM IMAGEM COM ÁUDIO"
         },
         "convertidor_tomp3": {
-            "texto1": "[❗️INFORMAÇÃO❗️] RESPONDA AO VÍDEO OU ÁUDIO QUE DESEJA CONVERTER EM ÁUDIO/MP3",
-            "texto2": "[❗️INFORMAÇÃO❗️] LAMENTAMOS, OCORREU UM ERRO AO BAIXAR SEU VÍDEO, POR FAVOR, TENTE NOVAMENTE",
-            "texto3": "[❗️INFORMAÇÃO❗️] LAMENTAMOS, OCORREU UM ERRO AO CONVERTER SEU VÍDEO PARA ÁUDIO/MP3, POR FAVOR, TENTE NOVAMENTE"
+            "texto1": "[❗𝐈𝐍𝐅𝐎❗] اعمل ريبلاي للفيديو الي عايز تحوله صوت يعبد",
+            "texto2": "[❗𝐈𝐍𝐅𝐎❗] اسف يسطا حصلت مشكله جرب تاني",
+            "texto3": "[❗𝐈𝐍𝐅𝐎❗] حصلت مشكله وانا بحوله جرب تاني"
         },
         "convertidor_toptt": {
             "texto1": "[❗️INFORMAÇÃO❗️] RESPONDA AO VÍDEO OU ÁUDIO QUE DESEJA CONVERTER EM ÁUDIO/NOTA DE VOZ",
@@ -665,19 +665,20 @@
             ]
         },
         "downloader_modapk": {
-            "texto1": "*[❗️] Insira o nome do APK que deseja buscar.*",
+            "texto1": "*[❗] حط اسم البرنامج الي عايزه مهكر*",
             "texto2": [
-                "📲 *تحميل ابتويد* 📲\n\n📌 *Nome:*",
-                "📦 *الطرد:*",
+                "📲 *تحميلات التطبيق على ابتويد* 📲\n\n📌 *Nombre:*",
+                "📦 *البرنامج:*",
                 "🕒 *اخر تحديث:*",
-                "📥 *المساحة:*"
+                "📥 *المساحه:*"
             ],
-            "texto3": "*[⛔️] الملف مساحته كبيره جدا لا يمكنني ارساله لاني دلوعه*",
-            "texto4": "*[❗️] لا يجود نسخه مهكره من هذا التطبيق*"
+            "texto3": "*[ ⛔ ] البرنامج مساحته كبيره مش هعرف ابعته.*",
+            "texto4": "*[❗] خطأ, مش لاقيه نسخه مهكره من البرنامج ده.*"
+            
         },
         "downloader_pinterest": {
-            "texto1": "*[❗️] مفيش حاجه كده يسطا فبنترست*",
-            "texto2": "*نتيجة البحث*"
+            "texto1": "*[❗𝐈𝐍𝐅𝐎❗] مثال على استخدام الامر ",
+            "texto2": "*نتيجه بحثك*"
         },
         "downloader_playdoc": {
             "texto1": "*[❗️] Informe o nome ou a URL do documento do Google Drive, Por favor, insira um link válido ou o ID de uma pasta/arquivo.*\n\n*—◉ Exemplo:*",
@@ -1437,36 +1438,7 @@
                 "Você é sempre leal?",
                 "Você tem uma paixão adolescente?",
                 "Por quem você se apaixonou?",
-                "Com qual celebridade você gostaria de sair?",
-                "Qual foi o momento mais embaraçoso de sua vida?",
-                "Qual boca você mais gosta do grupo aqui?",
-                "Qual jogador tem a mão mais bonita?",
-                "Onde foi seu primeiro beijo?",
-                "Quem do grupo você gostaria de beijar mais?",
-                "Quem na mesa é talvez o mais divertido?",
-                "Qual é o maior erro da sua vida?",
-                "Você já passou por uma situação embaraçosa em um encontro?",
-                "Você já entrou em contato com drogas?",
-                "A quem você gostaria de beijar agora?",
-                "Quando foi a última vez que você ficou bêbado?",
-                "Você já trapaceou em uma prova escolar?",
-                "Você já roubou algo no passado?",
-                "Você ronca à noite?",
-                "Qual é a sua música favorita?",
-                "Com quais jogadores você negociaria por uma semana e por quê?",
-                "Se você se mudasse para uma ilha deserta, quem você levaria daqui?",
-                "Do que você tem mais medo?",
-                "Onde você se barbeia?",
-                "Você tem um apelido?",
-                "Você olha no banheiro antes de se lavar?",
-                "Quem te deu a pior angústia?",
-                "Quantas vezes você já foi beijado?",
-                "O que é mais embaraçoso que já aconteceu com você?",
-                "Com quantos caras / garotas você já beijou?",
-                "Por quem você está apaixonado(a)?",
-                "Qual estrela você gosta?",
-                "Você começou algo com XY (inserir nome)?",
-                "Você já roubou algo?"
+
             ]
         },
         "game__cancion": {
@@ -2989,9 +2961,17 @@
         },
         "owner_reporte": {
             "texto1": [
-                "[❗𝐈𝐍𝐅𝐎❗] INSIRA UM RELATÓRIO*\n\nEXEMPLO",
-                "o comando",
-                "não envia nada*"
+                "[❗𝐈𝐍𝐅𝐎❗] اكتب حاجه عايز توصلها للمطور*\n\nEXEMPLO",
+                "الامر",
+                
+            "texto5": "[ ✔️ ] RELATÓRIO ENVIADO COM SUCESSO AO CRIADOR DO BOT, SEU RELATÓRIO SERÁ ATENDIDO O MAIS RÁPIDO POSSÍVEL, SE FOR FALSO OU BRINCADEIRA, SERÁ IGNORADO"
+        },
+        "owner_resetprefix": {
+            "texto1": "[❗𝐈𝐍𝐅𝐎❗] PREFIXO RESETADO COM SUCESSO"
+        },
+        "owner_resetuser": {
+            "texto1": "[❗] Formato de usuário não reconhecido. Responda a uma mensagem, marque um usuário ou escreva seu número de usuário.",
+            "texto2": "[❗] Formato de usuário não reconhecido. Responda a uma mensagem, marque um usuário ou escreva seu número de usuár"não envia nada*"
             ],
             "texto2": "[❗𝐈𝐍𝐅𝐎❗] O RELATÓRIO DEVE TER NO MÍNIMO 10 CARACTERES",
             "texto3": "[❗𝐈𝐍𝐅𝐎❗] O RELATÓRIO DEVE TER NO MÁXIMO 1000 CARACTERES",
@@ -3000,13 +2980,7 @@
                 "┴\n┬\n├❧ MENSAGEM"
             ],
             "texto5": "[ ✔️ ] RELATÓRIO ENVIADO COM SUCESSO AO CRIADOR DO BOT, SEU RELATÓRIO SERÁ ATENDIDO O MAIS RÁPIDO POSSÍVEL, SE FOR FALSO OU BRINCADEIRA, SERÁ IGNORADO"
-        },
-        "owner_resetprefix": {
-            "texto1": "[❗𝐈𝐍𝐅𝐎❗] PREFIXO RESETADO COM SUCESSO"
-        },
-        "owner_resetuser": {
-            "texto1": "[❗] Formato de usuário não reconhecido. Responda a uma mensagem, marque um usuário ou escreva seu número de usuário.",
-            "texto2": "[❗] Formato de usuário não reconhecido. Responda a uma mensagem, marque um usuário ou escreva seu número de usuário.",
+        },io.",
             "texto3": [
                 "[❗] O usuário",
                 "não está na minha base de dados."
