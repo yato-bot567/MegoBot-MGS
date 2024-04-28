@@ -7,14 +7,14 @@ import fetch from 'node-fetch';
 import axios from 'axios';
 import moment from 'moment-timezone';
 
-global.botnumber = "*『🔥┇kana-𝙱𝙾𝚃』*"
+global.botnumber = "*『🔥┇𝙼𝙴𝙶𝙾-𝙱𝙾𝚃』*"
 global.confirmCode = ""
 
-global.owner =[['201554160374', 'Dev', true],
+global.owner = [['201003691617', 'ابو عبدالله', true],
 ];
 
-global.suittag = ['201554160374'];
-global.prems = ['201554160374'];
+global.suittag = ['201003691617'];
+global.prems = ['201003691617'];
 
 global.packname = '☾︎ KANABOT-𝙈𝘿 ☽︎';
 global.author = '✩kana-𝙱𝙾𝚃☆';
