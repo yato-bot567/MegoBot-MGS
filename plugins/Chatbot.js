@@ -5,7 +5,7 @@ let handler = m => m;
  let responses; 
  if (/^اه$/i.test(m.text)) { 
  responses = [ 
- 'الشارع الي وراه'
+ 'سلامتك'
  ]; 
  } else if (/^كانا|كاناتي|كانونه$/i.test(m.text)) { 
      responses = [ 
