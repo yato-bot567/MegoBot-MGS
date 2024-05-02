@@ -41,7 +41,7 @@ conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 } catch {
 conn.reply(m.chat, '[❗خطاء❗]', m)
 }}
-handler.command = /^(الدين|ج|ك|م|ديني|دينيه)$/i
+handler.command = /^(الأسلام|الإسلام|menu-islam|islam|اسلام|الاسلام)$/i
 handler.exp = 20
 handler.fail = null
 export default handler
