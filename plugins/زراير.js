@@ -4,39 +4,33 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         message: {
           interactiveMessage: {
             header: {
-              title: 'الازرار'
+              title: '*قـائـمـة الـاوامــر*'
             },
             body: {
-              text: 'تست'
+              text: '🛡️ افتح القائمة بواسطة الزر\n⚡ لا تلعب كثير في القائمة'
             },
             nativeFlowMessage: {
               buttons: [
                 {
                   name: 'single_select',
                   buttonParamsJson: JSON.stringify({
-                    title: 'اضغط',
+                    title: 'دوس هنا ',
                     sections: [
                       {
-                        title: 'القائمة',
-                        highlight_label: 'تست',
+                        title: 'قوائم البوت',
+                        highlight_label: 'اختار',
                         rows: [
                           {
-                            header: 'منشن',
-                            title: 'منشن',
+                            header: 'قسم الانمي',
+                            title: '.الانمي',
                             description: '',
-                            id: '.منشن'
-                          },
-                                        {
-                            header: 'المطور',
-                            title: 'المطور',
-                            description: '',
-                            id: '.مطور'
+                            id: 'te'
                           },
                           {
-                            header: 'اوامر',
-                            title: 'اوامر',
+                            header: 'قسم الاوامر',
+                            title: '.المهام',
                             description: '',
-                            id: '.اوامر'
+                            id: 'te'
                           }
                         ]
                       }
@@ -55,6 +49,6 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
 handler.help = ['info']
 handler.tags = ['main']
-handler.command = ['الازرار']
+handler.command = ['قايمه']
 
 export default handler
