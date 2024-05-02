@@ -17,6 +17,31 @@ let date = d.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: '
 let _uptime = process.uptime() * 1000
 let uptime = clockString(_uptime)
 let user = global.db.data.users[m.sender]
+let { money, joincount } = global.db.data.users[m.sender]
+let { exp, limit, level, role } = global.db.data.users[m.sender]
+let { min, xp, max } = xpRange(level, global.multiplier)
+let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length 
+let more = String.fromCharCode(8206)
+let readMore = more.repeat(850)   
+let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
+let str = `
+*▫️📆تاريخ:* ${date}
+*▫️🕛وقت نشط:* ${uptime}
+*▫️⚡المستخدمين:* ${rtotalreg}
+*▫️🎖️ مستوى* ${level}
+*▫️🧰 خبرتك ${exp}*
+*▫️⚓ رتبتك ${role}*
+
+*▫️💎الماس:* ${limit}
+*▫️👾عملات:* ${money}
+*▫️🪙الرموز:* ${joincount}
+*▫️🎟️بريم:* ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
+
+*🟥🟥🟥تحذير هام جدا يمنع منعاً باتاً استخدام البوت في الاغاني او الاباحيات والا سيتم حذر الشات بأكلمه من استعمال البوت🟥*
+*▫️  اسم البوت ,كانا*
+*▫️ حط قبل كل امر*  (.)*
+*▫️ اســم الـمطور  Abo Abdallah ❦︎*
+*▫️اليك القائمه يحب*  ${taguser}
 
 > *▫️💗━━ الـجـروب━━💗
 معاك بوت كانا الدلوعه☝🏻 ميااوو😼
