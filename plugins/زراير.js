@@ -28,7 +28,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
                           },
                           {
                             header: 'قسم الاوامر',
-                            title: '.المهام',
+                            title: '.اوامر',
                             description: '',
                             id: 'te'
                           }
@@ -49,6 +49,6 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
 handler.help = ['info']
 handler.tags = ['main']
-handler.command = ['قايمه']
+handler.command = ['اوامر']
 
 export default handler
