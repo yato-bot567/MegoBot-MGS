@@ -64,5 +64,5 @@ const handler = async (m, { conn, args, usedPrefix }) => {
 };
 handler.help = ["artdraw"];
 handler.tags = ["drawing"];
-handler.command = /^(انمي)$/i;
+handler.command = /^(ارسم-انمي)$/i;
 export default handler;
