@@ -64,7 +64,7 @@ conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 } catch {
 conn.reply(m.chat, '[❗خطاء❗]', m)
 }}
-handler.command = /^(help|الاوامر|menu|أوامر|menu|اوامر)$/i
+handler.command = /^(help|الاوامر|جروب|جروب-اوامر|قروب|اوامر-الجروب)$/i
 handler.exp = 20
 handler.fail = null
 export default handler
