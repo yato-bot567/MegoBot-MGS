@@ -46,7 +46,7 @@ global.wm2 = `${dia} ${fecha}\n☾︎ KANABOT-𝙈𝘿 ☽︎`;
 global.gt = '☾︎ KANABOT-𝙈𝘿 ☽︎';
 global.mysticbot = '☾︎ KANABOT-𝙈𝘿 ☽︎';
 global.md = 'https://www.instagram.com/m0hamed.78?igsh=enB0eG95eDh5d2Z1';
-global.mysticbot = 'atom.bio/mego51_51';
+global.mysticbot = 'https://www.instagram.com/m0hamed.78?igsh=enB0eG95eDh5d2Z1';
 global.waitt = '*[ ⏳ ] انتظر جاي التحميل تابع صاحب البوت*...\n\n*https://www.instagram.com/m0hamed.78?igsh=enB0eG95eDh5d2Z1*';
 global.waittt = '*[ ⏳ ] انتظر جاي التحميل تابع صاحب البوت*...\n\n*https://www.instagram.com/m0hamed.78?igsh=enB0eG95eDh5d2Z1*';
 global.waitttt = '*[ ⏳ ] انتظر جاي التحميل تابع صاحب البوت*...\n\n*https://www.instagram.com/m0hamed.78?igsh=enB0eG95eDh5d2Z1*';
