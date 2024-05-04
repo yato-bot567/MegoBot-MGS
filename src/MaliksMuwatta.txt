@@ -45,5 +45,3 @@ const hadiths = [
 hadiths.forEach(hadith => {
     console.log(hadith.narrator + ' قال: ' + hadith.hadith);
 });
-
-// صنع بواسطه ابو عبدالله
