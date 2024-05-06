@@ -1,7 +1,6 @@
 let ro = 3000
 let handler = async (m, { conn, usedPrefix, command}) => {
 let time = global.db.data.users[m.sender].lastrob + 7200000
-if (new Date - global.db.data.users[m.sender].lastrob < 7200000) throw `*⏱️ مهلا انتظر ${msToTime(time - new Date())} عشان تسرق تاني*`
 let who
 if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false
 else who = m.chat
