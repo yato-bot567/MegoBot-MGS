@@ -44,7 +44,7 @@ const handler = async (m, {conn, isPrems}) => { // lastmiming
 };
 handler.help = ['minar2'];
 handler.tags = ['gata'];
-handler.command = ['كوينز', 'miming2', 'تعدين 2', '2تعدين', 'minarcoins', 'minarmystic'];
+handler.command = ['كوينز', 'miming2', 'تعدين', '2تعدين', 'minarcoins', 'minarmystic'];
 handler.fail = null;
 handler.exp = 0;
 export default handler;
