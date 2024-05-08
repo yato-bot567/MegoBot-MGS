@@ -10,8 +10,6 @@ if (m.isBaileys && m.fromMe)
 return !0
 if (!m.isGroup) return !1
 if (!text) throw '*_⚠ • ️Ingrese un -texto- para enviar un mensaje a todos los grupos._*'
-const linkThisGroup = `${link}`
-if (m.text.includes(linkThisGroup)) return conn.reply(m.chat, '❌ *_No puedes espamear enlaces a otros grupos._*', m)
 let time = global.db.data.users[m.sender].msgwait + 300000
 if (new Date - db.data.users[m.sender].msgwait < 300) throw `*_⚠️ • Tienes que esperar ${msToTime(time - new Date())} para volver a enviar un mensaje._*`
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
