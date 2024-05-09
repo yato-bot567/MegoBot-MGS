@@ -46,7 +46,7 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
     const formats = await bestFormat(youtubeLink, 'video');
     const buff = await getBuffer(formats.url);
     const yt_1 = await youtubedl(youtubeLink).catch(async (_) => await youtubedlv2(youtubeLink));
-    const ttl_1 = `${yt_1?.title ? yt_1.title : 'Tu_video_descargado'}`;
+    const ttl_1 = `${yt_1?.title ? yt_1.title : 'الفيديو_الذي_قمت_بتنزيله'}`;
     const fileSizeInBytes = buff.byteLength;
     const fileSizeInKB = fileSizeInBytes / 1024;
     const fileSizeInMB = fileSizeInKB / 1024;
@@ -98,7 +98,7 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
     }
   }
 }};
-handler.command = /^(video|fgmp4|dlmp4|getvid|yt(v|mp4)?)$/i;
+handler.command = /^(فيديو|فديو|yt|فيد|يوتيوب_فيديو|يوتيوب)?)$/i;
 export default handler;
 
 function bytesToSize(bytes) {
