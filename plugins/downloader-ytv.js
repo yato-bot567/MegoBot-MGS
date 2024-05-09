@@ -1,37 +1,74 @@
-import {youtubedl, youtubedlv2} from '@bochilteam/scraper';
-import fetch from 'node-fetch';
+import fg from 'api-dylux';
+import { youtubedl, youtubedlv2, youtubedlv3 } from '@bochilteam/scraper';
+import ytsr from 'ytsr';
+import ytdl from 'ytdl-core';
+import fs from 'fs';
+import os from 'os';
 
-const handler = async (m, {conn, args}) => {
-  const datas = global
-  const idioma = datas.db.data.users[m.sender].language
-  const _translate = JSON.parse(fs.readFileSync(`./language/${idioma}.json`))
-  const tradutor = _translate.plugins.downloader_ytv_2
-
-  if (!args[0]) throw tradutor.texto1;
-  await m.reply(tradutor.texto2);
+let limit = 500;
+let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) => {
+  let searchQuery = args.join(" ");
+  
+  if (!searchQuery) throw `*❎ يرجى إدخال عنوان الفيديو للبحث عنه.*`;
+  
+  m.react(rwait);
   try {
-    const qu = args[1] || '360';
-    const q = qu + 'p';
-    const v = args[0];
-    const yt = await youtubedl(v).catch(async (_) => await youtubedlv2(v));
-    const dl_url = await yt.video[q].download();
-    const ttl = await yt.title;
-    const size = await yt.video[q].fileSizeH;
-    const cap = `${traduor.texto3[0]} ${ttl}\n${traduor.texto3[1]} ${size}`.trim();
-    await await conn.sendMessage(m.chat, {document: {url: dl_url}, caption: cap, mimetype: 'video/mp4', fileName: ttl + `.mp4`}, {quoted: m});
-  } catch {
-    try {
-      const lolhuman = await fetch(`https://api.lolhuman.xyz/api/ytvideo2?apikey=${lolkeysapi}&url=${args[0]}`);
-      const lolh = await lolhuman.json();
-      const n = lolh.result.title || 'error';
-      const n2 = lolh.result.link;
-      const n3 = lolh.result.size;
-      const cap2 = `${traduor.texto3[0]} ${n}\n${traduor.texto3[1]} ${n3}`.trim();
-      await conn.sendMessage(m.chat, {document: {url: n2}, caption: cap2, mimetype: 'video/mp4', fileName: n + `.mp4`}, {quoted: m});
-    } catch {
-      await conn.reply(m.chat, tradutor.texto4, m);
+    const searchResults = await ytsr(searchQuery, { limit: 1 });
+    const video = searchResults.items.filter(i => i.type === 'video')[0];
+    if (!video) throw new Error('No videos found');
+    
+    const info = await ytdl.getInfo(video.url);
+    const format = ytdl.chooseFormat(info.formats, { quality: 'highest' });
+    if (!format) {
+      throw new Error('No valid formats found');
     }
+
+    if (format.contentLength / (1024 * 1024) >= limit) {
+      return m.reply(`❒ *⚖️ الـمسـاحـه*: ${format.contentLength / (1024 * 1024).toFixed(2)}MB\n❒ *🎞️ الـجـوده*: ${format.qualityLabel}\n\n*❒ الـملـف تـجاوز حـد الـمساحــه* *+${limit} MB*`);
+    }
+
+    const tmpDir = os.tmpdir();
+    const fileName = `${tmpDir}/${info.videoDetails.videoId}.mp4`;
+
+    const writableStream = fs.createWriteStream(fileName);
+    ytdl(video.url, {
+      quality: format.itag,
+    }).pipe(writableStream);
+
+    writableStream.on('finish', () => {
+      conn.sendFile(
+        m.chat,
+        fs.readFileSync(fileName),
+        `${info.videoDetails.videoId}.mp4`,
+        `*❖───┊ ♪ يــوتيوب ♪ ┊───❖*
+	  
+	  *❏ الـعـنوان: ${info.videoDetails.title}*
+	  *❐ الـمده: ${info.videoDetails.lengthSeconds} ثانية*
+	  *❑ الـمـشاهدات: ${info.videoDetails.viewCount}*
+	  *❒ وقــت الـرفـع: ${info.videoDetails.publishDate}*
+	  *❒ الـرابـط: ${video.url}*`,
+        m,
+        false,
+        { asDocument: chat.useDocument }
+      );
+
+      fs.unlinkSync(fileName); // حذف الملف المؤقت
+      m.react(done);
+    });
+
+    writableStream.on('error', (error) => {
+      console.error(error);
+      m.reply('*جـرب لاحـقاً !*');
+    });
+  } catch (error) {
+    console.error(error);
+    m.reply('*جـرب لاحـقاً !*');
   }
 };
-handler.command = /^yt|فيديو|فيد|يوتيوب$/i;
+
+handler.help = ['فيديو <اسم الفيديو>'];
+handler.tags = ['بحث فيديو', 'تحميل فيديو'];
+handler.command = ['فيديو'];
+handler.diamond = false;
+
 export default handler;
