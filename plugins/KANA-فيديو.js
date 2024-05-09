@@ -70,7 +70,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     }
   }
 };
-handler.command = /^(شغل|فيديو)$/i;
+handler.command = /^(زبي|فيديو)$/i;
 export default handler;
 
 async function search(query, options = {}) {
