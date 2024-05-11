@@ -1,30 +1,56 @@
-// قم بإنشاء متغير لتخزين قائمة الأرقام المغربية المحظورة
-let blockedNumbers = [];
+// Define a variable to store the anti-212 mode
+let anti212Mode = false;
 
-// أمر "منع212" لإضافة أو إزالة رقم مغربي محظور
-bot.command('منع212', (ctx) => {
-    // افحص إذا كانت الرسالة تحتوي على رقم مغربي
-    if (ctx.message.text.match(/^منع212\s+\d{9}$/)) {
-        let number = ctx.message.text.split(' ')[1];
-        if (!blockedNumbers.includes(number)) {
-            // قم بإضافة الرقم إلى قائمة الأرقام المحظورة
-            blockedNumbers.push(number);
-            ctx.reply(`تم منع الرقم المغربي ${number}`);
-        } else {
-            // قم بإزالة الرقم من قائمة الأرقام المحظورة
-            blockedNumbers = blockedNumbers.filter(n => n !== number);
-            ctx.reply(`تم السماح بالرقم المغربي ${number}`);
-        }
+// Define a function to toggle anti-212 mode
+function toggleAnti212Mode(message) {
+  if (message.body === 'anti212') {
+    anti212Mode =!anti212Mode;
+    if (anti212Mode) {
+      console.log('Anti-212 mode enabled');
     } else {
-        ctx.reply('الرجاء استخدام الأمر بالصيغة الصحيحة: منع212 [الرقم المغربي]');
+      console.log('Anti-212 mode disabled');
     }
-});
+  }
+}
 
-// قم بإيقاف تشغيل البوت عندما يأتي الرقم المغربي محظورًا
-bot.on('message', (ctx) => {
-    if (blockedNumbers.includes(ctx.message.text.substring(0, 3))) {
-        ctx.reply('عذراً، لا يمكنني قبول الأوامر من هذا الرقم المغربي.');
-    } else {
-        // تنفيذ الأوامر الأخرى هنا...
+// Define a function to filter out commands from numbers starting with 212
+function filterCommands(message) {
+  if (anti212Mode) {
+    const phoneNumber = message.from;
+    const countryCode = phoneNumber.substring(0, 3);
+    if (countryCode === '212') {
+      return false; // Ignore commands from numbers starting with 212
     }
-});
+  }
+  return true; // Allow commands from other numbers
+}
+
+// Example usage:
+const message1 = {
+  from: '+1234567890',
+  body: 'hello'
+};
+
+const message2 = {
+  from: '+212123456789',
+  body: 'hello'
+};
+
+const message3 = {
+  from: '+1234567890',
+  body: 'anti212'
+};
+
+toggleAnti212Mode(message3); // Enable anti-212 mode
+
+if (filterCommands(message1)) {
+  console.log('Command allowed from', message1.from);
+} else {
+  console.log('Command ignored from', message1.from);
+}
+
+if (filterCommands(message2)) {
+  console.log('Command allowed from', message2.from);
+} else {
+  console.log('Command ignored from', message2.from);
+}
