@@ -91,10 +91,6 @@ conn.connectOptions.maxRetries = 2; // يتم إعادة المحاولة مرت
 conn.on('message-new', async (message) => {
     await before(message, conn);
     // باقي الكود الخاص برد الرسائل وتنفيذ الأوامر الأخرى
-});
-
-// تشغيل البوت
-conn.connect();
       });
     }
   }
