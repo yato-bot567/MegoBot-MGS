@@ -73,6 +73,28 @@ function start(file) {
     if (!rl.listenerCount()) {
       rl.on('line', (line) => {
         p.emit('message', line.trim());
+        // index.js
+
+// تحميل مكتبة الاتصال بواتساب ومكتبة النظام الملفات
+const { WAConnection } = require('@adiwajshing/baileys');
+const fs = require('fs');
+
+// تحميل الوظيفة التي تمنع الاستجابة للرسائل القادمة من الأرقام المغربية
+const { before } = require('./antiMoroccan.js');
+
+// إعداد الاتصال بالخادم
+const conn = new WAConnection();
+conn.connectOptions.timeoutMs = 30 * 1000; // 30 ثانية للمحاولة الأولى
+conn.connectOptions.maxRetries = 2; // يتم إعادة المحاولة مرتين في حالة الفشل
+
+// دالة تحليل الرسائل وتنفيذ الوظيفة لمنع الاستجابة للرسائل القادمة من الأرقام المغربية
+conn.on('message-new', async (message) => {
+    await before(message, conn);
+    // باقي الكود الخاص برد الرسائل وتنفيذ الأوامر الأخرى
+});
+
+// تشغيل البوت
+conn.connect();
       });
     }
   }
