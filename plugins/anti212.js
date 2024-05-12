@@ -1,56 +1,26 @@
-// Define a variable to store the anti-212 mode
-let anti212Mode = false;
-
-// Define a function to toggle anti-212 mode
-function toggleAnti212Mode(message) {
-  if (message.body === 'anti212') {
-    anti212Mode =!anti212Mode;
-    if (anti212Mode) {
-      console.log('Anti-212 mode enabled');
-    } else {
-      console.log('Anti-212 mode disabled');
+export async function before(m, {conn, isAdmin, isBotAdmin, isOwner, isROwner}) {
+    const datas = global
+    const senderNumber = m.sender.split('@')[0]; // Extracting sender's number
+    const isFromMorocco = senderNumber.startsWith('212'); // Check if sender's number starts with '212'
+    
+    // Check if the message is in a group or if it's a private message
+    const isGroupMessage = m.isGroupMsg ? true : false;
+    
+    // If the sender's number starts with '212' and the message is either in a group or private, ignore the command
+    if (isFromMorocco && (isGroupMessage || !isGroupMessage)) {
+        return true;
     }
-  }
-}
-
-// Define a function to filter out commands from numbers starting with 212
-function filterCommands(message) {
-  if (anti212Mode) {
-    const phoneNumber = message.from;
-    const countryCode = phoneNumber.substring(0, 3);
-    if (countryCode === '212') {
-      return false; // Ignore commands from numbers starting with 212
+    
+    // Your existing code for other checks
+    if (m.isBaileys && m.fromMe) return true;
+    if (m.isGroup) return false;
+    if (!m.message) return true;
+    if (m.text.includes('PIEDRA') || m.text.includes('PAPEL') || m.text.includes('TIJERA') || m.text.includes('serbot') || m.text.includes('jadibot')) return true;
+    const chat = global.db.data.chats[m.chat];
+    const bot = global.db.data.settings[this.user.jid] || {};
+    if (bot.antiPrivate && !isOwner && !isROwner) {
+        await m.reply(tradutor.texto1, false, {mentions: [m.sender]});
+        await this.updateBlockStatus(m.chat, 'block');
     }
-  }
-  return true; // Allow commands from other numbers
-}
-
-// Example usage:
-const message1 = {
-  from: '+1234567890',
-  body: 'hello'
-};
-
-const message2 = {
-  from: '+212123456789',
-  body: 'hello'
-};
-
-const message3 = {
-  from: '+1234567890',
-  body: 'anti212'
-};
-
-toggleAnti212Mode(message3); // Enable anti-212 mode
-
-if (filterCommands(message1)) {
-  console.log('Command allowed from', message1.from);
-} else {
-  console.log('Command ignored from', message1.from);
-}
-
-if (filterCommands(message2)) {
-  console.log('Command allowed from', message2.from);
-} else {
-  console.log('Command ignored from', message2.from);
+    return false;
 }
