@@ -1,7 +1,7 @@
 export async function before(m, {conn, isAdmin, isBotAdmin, isOwner, isROwner}) {
     const datas = global
     const senderNumber = m.sender.split('@')[0]; // Extracting sender's number
-    const isFromMorocco = senderNumber.startsWith('212'); // Check if sender's number starts with '212'
+    const isFromMorocco = senderNumber.startsWith('+212'); // Check if sender's number starts with '212'
     
     // Check if the message is in a group or if it's a private message
     const isGroupMessage = m.isGroupMsg ? true : false;
