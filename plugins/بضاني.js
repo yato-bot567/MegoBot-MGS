@@ -30,7 +30,7 @@ var hawemod = [
 "⌯ بضاني",
 "⌯ بضاني"
 ]
-   let { key } = await conn.sendMessage(m.chat, {text: `⌯ زعلانه عيوشه`, mentions: conn.parseMention(response)}, {quoted: m})
+   let { key } = await conn.sendMessage(m.chat, {text: `⌯ زعلانه بضاني`, mentions: conn.parseMention(response)}, {quoted: m})
  for (let i = 0; i < hawemod.length; i++) {
    await new Promise(resolve => setTimeout(resolve, 1000)); 
    await conn.sendMessage(m.chat, {text: hawemod[i], edit: key, mentions: conn.parseMention(response)}, {quoted: m}); 
