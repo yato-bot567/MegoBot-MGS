@@ -29,4 +29,5 @@ handler.command = /^(رفع)$/i
 handler.group = true
 handler.botAdmin = true
 handler.fail = null
+handler.admin = true;
 export default handler
